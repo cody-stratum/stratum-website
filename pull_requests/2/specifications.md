@@ -10,7 +10,6 @@ Detailed specifications for the project:
   - Contact
 - Growth marketing consultancy focus.
 - Conversion-optimized design.
-- Custom CMS as a premium service.
 - Professional B2B messaging.
 - Mobile-responsive design.
 - SEO-optimized structure.
