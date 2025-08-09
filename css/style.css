@@ -262,6 +262,27 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+/* Premium Service Styles */
+.premium-service {
+  position: relative;
+  border: 2px solid var(--accent-blue);
+  background: linear-gradient(135deg, var(--white) 0%, #f8faff 100%);
+}
+
+.premium-badge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 /* Services Section */
 .services-grid {
   margin-top: 3rem;
@@ -534,6 +555,194 @@ a:hover {
 .nav-link:focus {
   outline: 2px solid var(--accent-blue);
   outline-offset: 2px;
+}
+
+/* Blog Styles */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-post-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.blog-post-image {
+  height: 200px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.blog-category {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.blog-post-content {
+  padding: 1.5rem;
+}
+
+.blog-post-date {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.blog-post-excerpt {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.blog-post-meta {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.blog-article {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.blog-article h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-blue);
+}
+
+.blog-article h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--dark-gray);
+}
+
+.blog-article p {
+  margin-bottom: 1.5rem;
+}
+
+.blog-article ul, .blog-article ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.blog-article li {
+  margin-bottom: 0.5rem;
+}
+
+.lead {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.blog-cta {
+  background: linear-gradient(135deg, var(--light-gray) 0%, #f0f9ff 100%);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-top: 3rem;
+  border: 1px solid #e5e7eb;
+}
+
+.case-study-overview {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.metric-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.metric-card.success {
+  border-left: 4px solid var(--success-green);
+}
+
+.metric-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.metric-change {
+  font-size: 0.8rem;
+  color: var(--success-green);
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.newsletter-form .form-group {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.newsletter-form .form-input {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .newsletter-form .form-group {
+    flex-direction: column;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Print Styles */
